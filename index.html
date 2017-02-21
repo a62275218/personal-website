@@ -5,34 +5,33 @@
     <title>My website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
 </head>
 <body>
 <div class="main-wrapper">
     <header>
         <nav>
             <ul>
-                <li class="logo"><a href="#">Lin Rong</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
+                <li id="sidebar_trigger"><a href="#"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
         <div id="banner">
-            <div class="inner">
+            <div class="inner ani wow pulse">
                 <h1>Lin Rong</h1>
-                <p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
-                <button id="main-btn">了解我</button>
+                <p class="sub-heading">Welcome to my personal website. Here you can explore things about me</p>
+                <button type="button" id="main-btn">Learn More</button>
                 <div class="more">
-                    更多
+                    <a href="#"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
     </header>
     <div class="content">
-        <section class="green-section">
-            <div class="wrapper">
+        <section class="green-section" id="section1">
+            <div class="wrapper ani wow fadeInLeft" >
                 <div>
-                    <h2>一个标题</h2>
+                    <h2>About Me</h2>
                     <div class="hr"></div>
                     <p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                 </div>
@@ -43,12 +42,12 @@
                 </div>
             </div>
         </section>
-        <section class="gray-section">
+        <section class="gray-section ">
             <div class="article-preview clearfix">
-                <div class="img-section">
+                <div class="img-section ani wow fadeInLeft">
                     <img src="img/pic01.jpg"/>
                 </div>
-                <div class="text-section">
+                <div class="text-section ani wow fadeInRight" id="section2">
                     <h2>又一个标题</h2>
                     <div class="sub-heading">
                         我是副标题
@@ -58,8 +57,8 @@
                         reprehenderit repudiandae totam vero! Culpa, vero?</p>
                 </div>
             </div>
-            <div class="article-preview clearfix">
-                <div class="text-section">
+            <div class="article-preview clearfix" id="section3">
+                <div class="text-section ani wow fadeInLeft">
                     <h2>又一个标题</h2>
                     <div class="sub-heading">
                         我是副标题
@@ -68,15 +67,15 @@
                         delectus, eius enim id ipsa itaque, magni molestiae numquam omnis recusandae repellendus
                         reprehenderit repudiandae totam vero! Culpa, vero?</p>
                 </div>
-                <div class="img-section">
+                <div class="img-section ani wow fadeInRight">
                     <img src="img/pic02.jpg"/>
                 </div>
             </div>
             <div class="article-preview clearfix">
-                <div class="img-section">
+                <div class="img-section ani wow fadeInLeft">
                     <img src="img/pic03.jpg"/>
                 </div>
-                <div class="text-section">
+                <div class="text-section ani wow fadeInRight" id="section4">
                     <h2>又一个标题</h2>
                     <div class="sub-heading">
                         我是副标题
@@ -87,8 +86,8 @@
                 </div>
             </div>
         </section>
-        <section class="purple-section">
-            <div class="heading-wrapper">
+        <section class="purple-section" id="section5">
+            <div class="heading-wrapper ani wow fadeInUp">
                 <h2>又一个标题</h2>
                 <div class="sub-heading">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam aspernatur assumenda
@@ -97,37 +96,37 @@
                 </div>
             </div>
             <div class="card-group clearfix">
-                <div class="card">
+                <div class="card ani wow fadeInUp">
                     <h3>标题</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad aliquam, atque dignissimos
                         dolores error ipsa molestias, nam nemo nihil officiis perspiciatis, quia quibusdam reprehenderit
                         saepe ullam vel vitae.</p>
                 </div>
-                <div class="card">
+                <div class="card ani wow fadeInUp">
                     <h3>标题</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad aliquam, atque dignissimos
                         dolores error ipsa molestias, nam nemo nihil officiis perspiciatis, quia quibusdam reprehenderit
                         saepe ullam vel vitae.</p>
                 </div>
-                <div class="card">
+                <div class="card ani wow fadeInUp">
                     <h3>标题</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad aliquam, atque dignissimos
                         dolores error ipsa molestias, nam nemo nihil officiis perspiciatis, quia quibusdam reprehenderit
                         saepe ullam vel vitae.</p>
                 </div>
-                <div class="card">
+                <div class="card ani wow fadeInUp">
                     <h3>标题</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad aliquam, atque dignissimos
                         dolores error ipsa molestias, nam nemo nihil officiis perspiciatis, quia quibusdam reprehenderit
                         saepe ullam vel vitae.</p>
                 </div>
-                <div class="card">
+                <div class="card ani wow fadeInUp">
                     <h3>标题</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad aliquam, atque dignissimos
                         dolores error ipsa molestias, nam nemo nihil officiis perspiciatis, quia quibusdam reprehenderit
                         saepe ullam vel vitae.</p>
                 </div>
-                <div class="card">
+                <div class="card ani wow fadeInUp">
                     <h3>标题</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad aliquam, atque dignissimos
                         dolores error ipsa molestias, nam nemo nihil officiis perspiciatis, quia quibusdam reprehenderit
@@ -148,6 +147,20 @@
             &copy Lin Rong - 2016
         </div>
     </footer>
+    <div class="mask"></div>
+    <div class="sidebar">
+        <ul>
+            <li class="about-me"><a href="#">About Me</a></li>
+            <li class="first-project"><a href="#">item2</a></li>
+            <li class="second-project"><a href="#">item3</a></li>
+            <li class="why-me"><a href="#">item4</a></li>
+            <li class="skill-set"><a href="#">item5</a></li>
+        </ul>
+    </div>
 </div>
+<a href="#"><div class="back-to-top">TOP</div></a>
+<script src="js/lib/jquery-3.1.1.js"></script>
+<script src="//cdn.bootcss.com/wow/1.1.2/wow.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

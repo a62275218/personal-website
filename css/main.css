@@ -1,8 +1,14 @@
 /*
 personal website stylesheet*/
 
+/*main content style*/
 body{
     width:100%;
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration:none;
 }
 nav {
     background: transparent;
@@ -32,6 +38,13 @@ nav ul li {
 nav .logo {
     display: inline-block;
     line-height: 50px;
+}
+
+nav #sidebar_trigger{
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:999;
 }
 
 nav ul li a {
@@ -120,6 +133,9 @@ ul{
     background: #18a;
 }
 
+#main-btn:hover{
+    cursor:pointer;
+}
 .green-section {
     background: #089DB0;
     text-align: center;
@@ -280,4 +296,62 @@ ul.share-group{
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center center;
+    overflow:hidden;
+}
+
+/*sidebar style*/
+.mask{
+    display:none;
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background:rgba(0,0,0,0.4)
+}
+
+.sidebar{
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:-300px;
+    width:300px;
+    background:#333;
+    padding:20px 0;
+    z-index:1000;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.sidebar ul a{
+    color:#fff;
+    width:100%;
+    text-decoration:none;
+    padding:10px 30px;
+    display:inline-block
+}
+
+.sidebar ul a:hover{
+    background:#444;
+}
+/*back to top*/
+.back-to-top{
+    width:80px;
+    height:40px;
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    border:1px solid #888;
+    color:#fff;
+    text-align:center;
+    line-height:40px;
+    background-color:#333;
+}
+
+.fa{
+    color:#fff;
 }
